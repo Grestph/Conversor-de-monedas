@@ -43,6 +43,8 @@ El programa permite convertir entre las siguientes monedas:
 5. El programa consulta la API para obtener el tipo de cambio.
 6. Se procesa la respuesta en formato JSON.
 7. Se muestra el resultado de la conversión.
+8. Se puede usar opciones como historial de conversiones
+9. Si esta todo concluido, se usa la opcion salir
 
 ---
 
@@ -57,11 +59,11 @@ src
 ```
 
 **Descripción de las clases:**
-
-* `ConversordemonedasApp` → Clase principal con el menú interactivo.
 * `ConsultaApi` → Realiza las solicitudes HTTP a la API de tasas de cambio.
-* `Moneda` → Representa la respuesta JSON recibida de la API.
 * `Conversion` → Maneja la información de cada conversión realizada.
+* `ConversordemonedasApp` → Clase principal con el menú interactivo.
+* `Moneda` → Representa la respuesta JSON recibida de la API.
+.
 
 ---
 
@@ -78,7 +80,8 @@ Sea bienvenido al conversor de monedas
 6) Peso colombiano → Dólar
 7) Sol Peruano → Dólar
 8) Dólar → Sol Peruano
-9) Salir
+9) Historial de conversiones
+10) Salir
 
 Ingrese el valor que deseas convertir:
 100
@@ -105,3 +108,4 @@ Proyecto desarrollado por Grecia Sanchez
 Programa **Oracle Next Education (ONE)**
 
 ---
+
